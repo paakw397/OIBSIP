@@ -1,112 +1,72 @@
-<!DOCTYPE html>
+gg<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Northstar Studio</title>
-    <meta name="description" content="A polished landing page concept for a modern digital studio." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <title>Level 2 Projects</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, #1f2937, #111827);
+        color: #f9fafb;
+      }
+
+      .card {
+        width: min(92vw, 760px);
+        padding: 2rem;
+        border-radius: 24px;
+        background: rgba(17, 24, 39, 0.9);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+      }
+
+      h1 {
+        margin-top: 0;
+        font-size: clamp(2rem, 4vw, 2.6rem);
+      }
+
+      p {
+        line-height: 1.7;
+        color: #d1d5db;
+      }
+
+      .links {
+        display: grid;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+
+      .links a {
+        display: block;
+        padding: 1rem 1.2rem;
+        border-radius: 14px;
+        text-decoration: none;
+        font-weight: 600;
+        color: #ffffff;
+        background: linear-gradient(90deg, #4f46e5, #2563eb);
+        transition: transform 0.2s ease;
+      }
+
+      .links a:hover {
+        transform: translateY(-2px);
+      }
+    </style>
   </head>
   <body>
-    <header class="site-header">
-      <nav class="nav container">
-        <a class="brand" href="index.html">Northstar</a>
-        <div class="nav-links">
-          <a href="#features">Features</a>
-          <a href="#about">About</a>
-          <a href="#testimonials">Testimonials</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="temperature.html">Converter</a>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero container">
-        <div class="hero-copy">
-          <p class="eyebrow">Launch faster with clarity</p>
-          <h1>Design systems that feel as good as they perform.</h1>
-          <p class="hero-text">
-            We create launch-ready experiences for ambitious products with elegant storytelling and frictionless user journeys.
-          </p>
-          <a class="btn btn-primary" href="#features">Explore services</a>
-        </div>
-        <div class="hero-card" aria-label="Highlights">
-          <h2>Trusted by teams building the future</h2>
-          <ul>
-            <li>Product strategy workshops</li>
-            <li>Conversion-focused web design</li>
-            <li>Launch support and optimization</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="features" class="section container">
-        <div class="section-heading">
-          <p class="eyebrow">What we do</p>
-          <h2>Everything needed for a confident launch.</h2>
-        </div>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Rapid prototyping</h3>
-            <p>Turn ideas into polished concepts quickly with clear messaging and strong visual hierarchy.</p>
-          </article>
-          <article class="card">
-            <h3>Conversion design</h3>
-            <p>Build pages that guide visitors from curiosity to action with delightful interactions.</p>
-          </article>
-          <article class="card">
-            <h3>Performance-first</h3>
-            <p>Every design decision stays lightweight, accessible, and ready for growth.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="about" class="section section-alt">
-        <div class="container split-layout">
-          <div>
-            <p class="eyebrow">About the studio</p>
-            <h2>Thoughtful design with a human-centred focus.</h2>
-          </div>
-          <p>
-            Northstar is a boutique creative studio that blends strategy, writing, and interface design into memorable product experiences. We help founders communicate value with calm confidence.
-          </p>
-        </div>
-      </section>
-
-      <section id="testimonials" class="section container">
-        <div class="section-heading">
-          <p class="eyebrow">Testimonials</p>
-          <h2>Partners love the calm, clear process.</h2>
-        </div>
-        <div class="card-grid testimonial-grid">
-          <article class="card quote-card">
-            <p>“Their process made our launch feel effortless and deeply intentional.”</p>
-            <strong>— Maya, Product Lead</strong>
-          </article>
-          <article class="card quote-card">
-            <p>“The new experience doubled our sign-up rate in the first month.”</p>
-            <strong>— Jordan, Founder</strong>
-          </article>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-content">
-        <p>Northstar Studio</p>
-        <div class="footer-links">
-          <a href="mailto:hello@northstar.example">Email</a>
-          <a href="#">Instagram</a>
-          <a href="#">LinkedIn</a>
-        </div>
+    <main class="card">
+      <h1>Level 2 Project Showcase</h1>
+      <p>Choose a completed experience to explore.</p>
+      <div class="links">
+        <a href="calculator.html">Open the Calculator</a>
+        <a href="tribute.html">Open the Tribute Page</a>
       </div>
-    </footer>
+    </main>
   </body>
 </html>
