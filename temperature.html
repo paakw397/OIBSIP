@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <meta name="description" content="A friendly temperature conversion tool built with HTML, CSS, and JavaScript." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="brand" href="temperature.html">TempConvert</a>
+        <div class="nav-links">
+          <a href="index.html">Landing</a>
+          <a href="portfolio.html">Portfolio</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="converter-page">
+      <section class="converter-card container">
+        <div class="section-heading">
+          <p class="eyebrow">Interactive tool</p>
+          <h1>Convert temperature instantly.</h1>
+          <p class="hero-text">Switch between Celsius, Fahrenheit, and Kelvin with validation for impossible values.</p>
+        </div>
+
+        <form id="converter-form" class="converter-form">
+          <label for="temperature">Temperature value</label>
+          <input id="temperature" name="temperature" type="text" placeholder="Enter a number" />
+
+          <label for="input-unit">Input unit</label>
+          <select id="input-unit" name="input-unit">
+            <option value="c">Celsius</option>
+            <option value="f">Fahrenheit</option>
+            <option value="k">Kelvin</option>
+          </select>
+
+          <button class="btn btn-primary" type="submit">Convert</button>
+        </form>
+
+        <div id="error-message" class="error-message" aria-live="polite"></div>
+
+        <div class="results-grid">
+          <div class="result-card">
+            <h2>Celsius</h2>
+            <p id="celsius-output">—</p>
+          </div>
+          <div class="result-card">
+            <h2>Fahrenheit</h2>
+            <p id="fahrenheit-output">—</p>
+          </div>
+          <div class="result-card">
+            <h2>Kelvin</h2>
+            <p id="kelvin-output">—</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
